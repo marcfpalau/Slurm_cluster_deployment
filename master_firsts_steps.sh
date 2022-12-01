@@ -16,9 +16,6 @@ chkconfig ntpd on
 ntpdate pool.ntp.org
 systemctl start ntpd
 
-# SLURM accounting support
-#sudo yum install mariadb-server mariadb-devel dnf -y
-
 #get the lattest EPEL repo
 sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
 
