@@ -130,6 +130,7 @@ mkdir /var/log/slurm
 chown slurm: /var/log/slurm
 touch /var/log/slurm_jobacct.log /var/log/slurm/slurm_jobcomp.log
 chown slurm: /var/log/slurm_jobacct.log /var/log/slurm/slurm_jobcomp.log
+chmod +rx /etc/slurm
 
 #Open the ports that slurm uses
 firewall-cmd --permanent --zone=internal --add-port=6817/udp
